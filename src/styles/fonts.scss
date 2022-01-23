@@ -1,0 +1,57 @@
+$thin: 100;
+$extraLight: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+$extraBold: 800;
+
+
+@font-face {
+  font-family: "Outfit-Thin";
+  src: url(../assets/fonts/Outfit-Thin.ttf);
+  font-weight: $thin;
+}
+
+@font-face {
+  font-family: "Outfit-ExtraLight";
+  src: url(../assets/fonts/Outfit-ExtraLight.ttf);
+  font-weight: $extraLight;
+}
+
+@font-face {
+  font-family: "Outfit-Light";
+  src: url(../assets/fonts/Outfit-Light.ttf);
+  font-weight: $light;
+}
+
+@font-face {
+  font-family: "Outfit-Regular";
+  src: url(../assets/fonts/Outfit-Regular.ttf);
+  font-weight: $regular;
+}
+
+@font-face {
+  font-family: "Outfit-Medium";
+  src: url(../assets/fonts/Outfit-Medium.ttf);
+  font-weight: $medium;
+}
+
+@font-face {
+  font-family: "Outfit-SemiBold";
+  src: url(../assets/fonts/Outfit-SemiBold.ttf);
+  font-weight: $semiBold;
+}
+
+@font-face {
+  font-family: "Outfit-Bold";
+  src: url(../assets/fonts/Outfit-Bold.ttf);
+  font-weight: $bold;
+}
+
+@font-face {
+  font-family: "Outfit-ExtraBold";
+  src: url(../assets/fonts/Outfit-ExtraBold.ttf);
+  font-weight: $extraBold;
+}

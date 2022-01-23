@@ -1,0 +1,46 @@
+@use "../../styles/colors.module.scss" as colors;
+@use "../../styles/variables.module.scss" as spaces;
+
+.wrapper {
+  position: relative;
+  margin: spaces.$space-5 spaces.$space-2;
+  padding: spaces.$space-4;
+  border-radius: spaces.$space-1;
+  transition: 300ms ease-in-out;
+
+  .title {
+    display: inline-block;
+    margin-bottom: spaces.$space-5;
+  }
+
+  .actionWrapper {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    button {
+      margin: spaces.$space-2;
+    }
+  }
+}
+
+.hover {
+  .title {
+    cursor: pointer;
+
+    &:hover {
+      color: colors.$secondary-purple;
+      transition: 100ms ease-in-out;
+    }
+  }
+}
+
+.light {
+  background-color: colors.$light-bold;
+}
+
+.dark {
+  color: colors.$light;
+  background-color: colors.$dark;
+}

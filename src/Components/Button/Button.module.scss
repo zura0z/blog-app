@@ -1,0 +1,44 @@
+@use "../../styles/colors.module.scss" as colors;
+@use "../../styles/variables.module.scss" as spaces;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  min-width: 50px;
+  margin: spaces.$space-3 0;
+  padding: spaces.$space-3;
+  border-radius: spaces.$space-1;
+  color: colors.$light;
+  border: none;
+  transition: 200ms ease-in-out;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+  }
+
+  &.primary {
+    background-color: colors.$primary-green;
+
+    &:hover {
+      background-color: colors.$secondary-green;
+    }
+  }
+
+  &.secondary {
+    background-color: colors.$primary-purple;
+
+    &:hover {
+      background-color: colors.$secondary-purple;
+    }
+  }
+
+  &.danger {
+    background-color: colors.$primary-red;
+
+    &:hover {
+      background-color: colors.$secondary-red;
+    }
+  }
+}

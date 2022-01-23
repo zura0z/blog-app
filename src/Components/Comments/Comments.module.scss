@@ -1,0 +1,37 @@
+@use "../../styles/colors.module.scss" as colors;
+@use "../../styles/variables.module.scss" as spaces;
+
+.wrapper {
+  margin: spaces.$space-5 spaces.$space-2;
+  padding: spaces.$space-4;
+  border-radius: spaces.$space-1;
+  transition: 300ms ease-in-out;
+
+  .header {
+    font-size: 24px;
+    text-decoration: underline;
+    margin-bottom: spaces.$space-5;
+  }
+
+  .comment {
+    background-color: colors.$grey;
+    margin: spaces.$space-5 spaces.$space-1;
+    padding: spaces.$space-4;
+    border-radius: spaces.$space-1;
+    border: 1px solid colors.$dark;
+  }
+}
+
+.light {
+  background-color: colors.$light-bold;
+}
+
+.dark {
+  color: colors.$light;
+  background-color: colors.$dark;
+
+  .comment {
+    background-color: colors.$dark-soft;
+    border-color: colors.$light;
+  }
+}

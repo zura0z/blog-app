@@ -1,0 +1,41 @@
+@use "../../../../styles/variables.module.scss" as spaces;
+@use "../../../../styles/colors.module.scss" as colors;
+
+.wrapper {
+  .inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 400px;
+
+    .input {
+      padding: spaces.$space-2;
+      border-radius: spaces.$space-1;
+      outline: none;
+      border: 1px solid colors.$grey;
+      width: 100%;
+      transition: 300ms ease-in-out;
+    }
+
+    img {
+      cursor: pointer;
+      position: absolute;
+      right: spaces.$space-2;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.light {
+  .input {
+    background-color: colors.$light;
+  }
+}
+
+.dark {
+  .input {
+    background-color: colors.$dark-soft;
+    color: colors.$light;
+  }
+}

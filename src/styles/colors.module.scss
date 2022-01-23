@@ -1,0 +1,16 @@
+$primary-green: #4d9273;
+$secondary-green: #28b374;
+$primary-purple: #4b63e9;
+$secondary-purple: #7589f8;
+$primary-red: #f34040;
+$secondary-red: #fd7a7a;
+$grey: #d3d5db;
+$light: #f4f6fb;
+$light-bold: #e7e7e9;
+$dark: #2a2a31;
+$dark-soft: #4f4f58;
+
+:export {
+  green: $primary-green;
+  purple: $primary-purple;
+}

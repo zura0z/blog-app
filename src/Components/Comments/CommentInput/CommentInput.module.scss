@@ -1,0 +1,34 @@
+@use "../../../styles/colors.module.scss" as colors;
+@use "../../../styles/variables.module.scss" as spaces;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  margin: spaces.$space-2 spaces.$space-2;
+  padding: spaces.$space-4;
+  border-radius: spaces.$space-1;
+  transition: 300ms ease-in-out;
+  background-color: colors.$light;
+
+  textarea {
+    padding: spaces.$space-3;
+    border-radius: spaces.$space-1;
+    min-width: 500px;
+    min-height: 200px;
+  }
+}
+
+.light {
+  background-color: colors.$light-bold;
+}
+
+.dark {
+  background-color: colors.$dark;
+
+  textarea {
+    color: colors.$light;
+    background-color: colors.$dark-soft;
+    border-color: colors.$light;
+  }
+}

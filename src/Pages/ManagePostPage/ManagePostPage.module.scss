@@ -1,0 +1,53 @@
+@use "../../styles/colors.module.scss" as colors;
+@use "../../styles/variables.module.scss" as spaces;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-top: 200px;
+
+  .inputsWrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    min-width: 500px;
+    margin: 0 auto;
+
+    input,
+    textarea {
+      padding: spaces.$space-3;
+      border-radius: spaces.$space-1;
+    }
+
+    input {
+      margin-bottom: spaces.$space-3;
+      border: 1px solid colors.$dark;
+    }
+
+    textarea {
+      min-width: 500px;
+      min-height: 200px;
+    }
+  }
+
+  .buttonsWrapper {
+    display: flex;
+    margin: 0 auto;
+
+    button {
+      width: 100px;
+      margin: spaces.$space-5;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.dark {
+  textarea,
+  input {
+    color: colors.$light;
+    background-color: colors.$dark-soft;
+    border-color: colors.$light !important;
+  }
+}
